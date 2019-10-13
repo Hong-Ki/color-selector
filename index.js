@@ -1,15 +1,19 @@
 import colorJson from "./color-set.json";
-import nameJson from "./color-name-mapping.json";
+import mappingJson from "./color-name-mapping.json";
 
 export const getColor = key => {
   return colorJson[key];
 };
 
 export const getColorId = name => {
-  return nameJson[name];
+  return mappingJson[name];
+};
+
+export const getColorName = key => {
+  return mappingJson[key];
 };
 
 export const getColorByName = name => {
-  const key = nameJson[name];
+  const key = mappingJson[name];
   return getColor(key);
 };
