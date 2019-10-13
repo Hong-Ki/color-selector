@@ -6,14 +6,13 @@ export const getColor = key => {
 };
 
 export const getColorId = name => {
-  return mappingJson[name];
+  return mappingJson.idToName[name];
 };
 
 export const getColorName = key => {
-  return mappingJson[key];
+  return mappingJson.nameToId[key];
 };
 
 export const getColorByName = name => {
-  const key = mappingJson[name];
-  return getColor(key);
+  return getColor(getColorId(name));
 };
