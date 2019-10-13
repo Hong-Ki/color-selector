@@ -1,0 +1,105 @@
+//white
+$color-selector-white-1: #ffffff;
+//black
+$color-selector-black-1: #000000;
+//gray
+$color-selector-gray-1: #fafafa;
+$color-selector-gray-2: #f2f2f2;
+$color-selector-gray-3: #eaeaea;
+$color-selector-gray-4: #dedede;
+$color-selector-gray-5: #c4c4c4;
+$color-selector-gray-6: #959595;
+$color-selector-gray-7: #666666;
+$color-selector-gray-8: #525252;
+$color-selector-gray-9: #333333;
+//red
+$color-selector-red-1: #fdd9d4;
+$color-selector-red-2: #faaba0;
+$color-selector-red-3: #f15944;
+$color-selector-red-4: #e52e15;
+//orange
+$color-selector-orange-1: #ffdfc8;
+$color-selector-orange-2: #ffc39a;
+$color-selector-orange-3: #ff9952;
+$color-selector-orange-4: #ff791c;
+//teal
+$color-selector-teal-1: #bdf6f4;
+$color-selector-teal-2: #67ebe5;
+$color-selector-teal-3: #2bdbd4;
+$color-selector-teal-4: #00beb6;
+//cyan
+$color-selector-cyan-1: #b8ebfb;
+$color-selector-cyan-2: #7cd8f4;
+$color-selector-cyan-3: #27beed;
+$color-selector-cyan-4: #008cb8;
+//blue
+$color-selector-blue-1: #c4e4ff;
+$color-selector-blue-2: #8fcbff;
+$color-selector-blue-3: #66b3f5;
+$color-selector-blue-4: #3fa2f7;
+//green
+$color-selector-green-1: #caf7d1;
+$color-selector-green-2: #97eca4;
+$color-selector-green-3: #75d885;
+$color-selector-green-4: #56c568;
+//pink
+$color-selector-pink-1: #ffd2d2;
+$color-selector-pink-2: #ff9696;
+$color-selector-pink-3: #ff7575;
+$color-selector-pink-4: #ff4949;
+//yellow
+$color-selector-yellow-1: #fdeebe;
+$color-selector-yellow-2: #ffe17f;
+$color-selector-yellow-3: #ffd139;
+$color-selector-yellow-4: #ffc400;
+
+// color-palette 싱크용 data
+$color-set: (
+  white: $color-selector-white-1,
+  black: $color-selector-black-1,
+  background-gray-3: $color-selector-gray-1,
+  background-gray-2: $color-selector-gray-2,
+  background-gray: $color-selector-gray-3,
+  light-gray: $color-selector-gray-4,
+  mid-gray-3: $color-selector-gray-5,
+  mid-gray-2: $color-selector-gray-6,
+  mid-gray: $color-selector-gray-7,
+  dark-gray-2: $color-selector-gray-8,
+  dark-gray-: $color-selector-gray-9,
+  brand-red-1: $color-selector-red-1,
+  brand-red-2: $color-selector-red-2,
+  brand-red-3: $color-selector-red-3,
+  brand-red-4: $color-selector-red-4,
+  brand-orange-1: $color-selector-orange-1,
+  brand-orange-2: $color-selector-orange-2,
+  brand-orange-3: $color-selector-orange-3,
+  brand-orange-4: $color-selector-orange-4,
+  brand-green-1: $color-selector-teal-1,
+  brand-green-2: $color-selector-teal-2,
+  brand-green-3: $color-selector-teal-3,
+  brand-green-4: $color-selector-teal-4,
+  brand-blue-1: $color-selector-cyan-1,
+  brand-blue-2: $color-selector-cyan-2,
+  brand-blue-3: $color-selector-cyan-3,
+  brand-blue-4: $color-selector-cyan-4,
+  links-informational-blue-1: $color-selector-blue-1,
+  links-informational-blue-2: $color-selector-blue-2,
+  links-informational-blue-3: $color-selector-blue-3,
+  links-informational-blue-4: $color-selector-blue-4,
+  success-positive-green-1: $color-selector-green-1,
+  success-positive-green-2: $color-selector-green-2,
+  success-positive-green-3: $color-selector-green-3,
+  success-positive-green-4: $color-selector-green-4,
+  error-nagative-red-1: $color-selector-pink-1,
+  error-nagative-red-2: $color-selector-pink-2,
+  error-nagative-red-3: $color-selector-pink-3,
+  error-nagative-red-4: $color-selector-pink-4,
+  warning-idle-yellow-1: $color-selector-yellow-1,
+  warning-idle-yellow-2: $color-selector-yellow-2,
+  warning-idle-yellow-3: $color-selector-yellow-3,
+  warning-idle-yellow-4: $color-selector-yellow-4
+);
+
+@function color-set($key, $opacity: 1) {
+  @return rgba(map-get($color-set, $key), $opacity);
+}

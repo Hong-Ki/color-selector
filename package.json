@@ -1,0 +1,13 @@
+{
+  "name": "color-selector",
+  "version": "0.0.1",
+  "description": "color selector in scss and js",
+  "main": "index.js",
+  "author": "Hong-Ki Min",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "typescript": "^3.6.3"
+  },
+  "types": "color-selector.d.ts"
+}
