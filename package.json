@@ -6,7 +6,7 @@
   "author": "Hong-Ki Min",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "typescript": "^3.6.3"
   },
   "types": "color-selector.d.ts"
